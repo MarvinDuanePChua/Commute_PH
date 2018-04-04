@@ -5,13 +5,15 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "flow": "flow"
+    "flow": "flow",
+    "postinstall": "rm -f ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json || rimraf ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json"
   },
   "dependencies": {
     "eslint": "^4.19.1",
     "eslint-plugin-react-native": "^3.2.1",
     "react": "^16.3.0-alpha.0",
     "react-native": "0.55.0",
+    "react-native-vector-icons": "^4.6.0",
     "react-navigation": "^1.5.9"
   },
   "devDependencies": {
