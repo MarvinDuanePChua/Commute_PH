@@ -9,14 +9,23 @@ import {Platform, StyleSheet, Text, View} from 'react-native';
 import {StackNavigator} from 'react-navigation';
 
 import Login from './src/screens/Login';
-
+import * as color from './src/values/Colors';
 const RootStack = StackNavigator({
   Login: {
     screen: Login
   }
-}, {initialRouteName: 'Login'});
+}, {
+  initialRouteName: 'Login',
+  headerMode: 'screen',
+  navigationOptions: {
+    headerStyle: {
+      backgroundColor: color.TOOLBAR
+    },
+    headerTintColor: color.TOOLBAR_TINT
+  }
+});
 
-export default class App extends Component<{}> {
+export default class App extends Component < {} > {
   render() {
     return (<RootStack/>);
   }
