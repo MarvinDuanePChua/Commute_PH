@@ -16,7 +16,7 @@ const RootStack = StackNavigator({
   }
 }, {initialRouteName: 'Login'});
 
-export default class App extends Component {
+export default class App extends Component<{}> {
   render() {
     return (<RootStack/>);
   }
