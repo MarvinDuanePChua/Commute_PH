@@ -1,0 +1,3 @@
+rootProject.name = 'Commute_PH'
+
+include ':app'

@@ -1,0 +1,76 @@
+# Xcode
+!**/*.xcodeproj
+!**/*.pbxproj
+!**/*.xcworkspacedata
+!**/*.xcsettings
+!**/*.xcscheme
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+ios/build/
+yarn.lock
+
+# Gradle
+/build/
+android/app/build/
+android/build/intermediates
+android/app/gradle/
+android/app/gradlew
+android/app/gradlew.bat
+android/build/
+/ReactAndroid/build/
+
+# Buck
+.buckd
+buck-out
+/ReactAndroid/src/main/jni/prebuilt/lib/armeabi-v7a/
+/ReactAndroid/src/main/jni/prebuilt/lib/x86/
+/ReactAndroid/src/main/gen
+
+# Watchman
+.watchmanconfig
+
+# Android
+.idea
+.gradle
+local.properties
+*.iml
+
+# Node
+*.log
+.nvm
+/bots/node_modules/
+!node_modules/
+node_modules/*
+!node_modules/metro/
+node_modules/metro/*
+!node_modules/metro/src/
+node_modules/metro/src/*
+!node_modules/metro/src/rn-cli.config.js
+
+# TODO: Check in yarn.lock in open source. Right now we need to keep it out
+# from the GitHub repo as importing it might conflict with internal workspaces
+*/**/yarn.lock
+
+# OS X
+.DS_Store
+
+# Test generated files
+/ReactAndroid/src/androidTest/assets/AndroidTestBundle.js
+*.js.meta
+
+/coverage
+/third-party
